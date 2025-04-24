@@ -131,7 +131,7 @@ label{
     border-radius: 15px;
     background-color: initial;
     font-family: "Arial Black", sans-serif;
-    font-weight: 500;
+    
 }
 .btnKayitOl:hover{
     background-color: rgba(122, 98, 75, 0.342);
@@ -185,6 +185,9 @@ label{
 @media (max-width: 800px){
     .container{
         flex-wrap: wrap;
+    }
+    #imgKoltuk{
+        width: 100vw;
     }
     .containerResim{
         width: 100vw;
