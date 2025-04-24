@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
         <div class="containerResim">
             <img id="imgKoltuk" src="./images/pexels-spiritsofmilly-3913574.jpg" alt="kenarından çekilmiş Koltuk fotoğrafı">
             <img id="imgLogo" src="./images/SaveClip.App_481868807_18035171393565223_4795207004525033017_n-removebg-preview.png" alt="Albi Home un logosu">
+            <img id="imgOk" src="./icons/label_important_24dp_992B15_FILL0_wght400_GRAD0_opsz24.svg" alt="Ok işareti">
             <p>Telif Hakları Gizlidir</p>
         </div>
 
@@ -28,31 +29,31 @@
                 <div>
                     <div>
                         <label class="labelSol" for="isim">İsim</label>
-                        <input type="text" name="isim" id="isim">
+                        <input type="text" name="isim" id="isim" required>
                     </div>
                     <div>
                         <label class="labelSag" for="soyIsim">Soy İsim</label>
-                        <input type="text" name="soyIsim" id="soyIsim">
+                        <input type="text" name="soyIsim" id="soyIsim" required>
                     </div>
                 </div>
                 <div>
                     <div>
                         <label class="labelSol" for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div>
                         <label class="labelSag" for="telefon">Telefon Numarası</label>
-                        <input type="number" name="telefon" id="telefon">
+                        <input type="tel" name="telefon" id="telefon" pattern="\d{3}" placeholder="0523*******" title="Lütfen geçerli bir numara girdiğinizden emin olun." required>
                     </div>
                 </div>
                 <div>
                     <div>
                         <label class="labelSol" for="sifre">Şifre</label>
-                        <input type="password" name="sifre" id="sifre">
+                        <input type="password" name="sifre" id="sifre" pattern="\d{4}" required>
                     </div>
                     <div>
                         <label class="labelSag" for="sifreTekrarı">Şifre Tekrarı</label>
-                        <input type="password" name="sifreTekrarı" id="sifreTekrarı">
+                        <input type="password" name="sifreTekrarı" id="sifreTekrarı"required>
                     </div>
                 </div>
                 

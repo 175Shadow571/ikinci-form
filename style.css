@@ -53,10 +53,6 @@ a:hover{
     height: 100vh;
     width: 100vw;
 }
-.containerResim{
-    position: relative;
-    width: 40vw;
-}
 
 
 
@@ -79,15 +75,20 @@ a:hover{
 }
 .containerForm p{
     margin: 12px;
+    animation: yuklemefont 2s both alternate;
 
 }
 .containerForm form{
     background-color: #ffffff;
     width: 100%;
     padding: 50px 40px;
+    box-shadow: 0 5px 20px -10px black;
+    animation: yuklemefont 2s both alternate;
 }
 .containerForm form>div{
     display: flex;
+    animation: yuklemefont 2s both alternate;
+
 }
 .containerForm form>div>div{
     flex: 1;
@@ -98,16 +99,23 @@ input{
     margin-bottom: 8px;
     border: 0;
     border-bottom: 1px dotted black;
+
+    animation: input 5s linear alternate;
+
 }
 
 input:focus{
     outline: none;
 }
+input:invalid{
+    border-bottom: 1px dotted rgb(255, 0, 0);
+}
+
 label{
     display: inline-block;
     margin: 8px;
     height: 24px;
-
+    animation: input 5s linear alternate;
 }
 .labelSag{
     width: 120px;
@@ -131,6 +139,16 @@ label{
     background-color: rgba(122, 98, 75, 0.342);
 }
 
+
+
+.containerResim{
+    position: relative;
+    width: 40vw;
+
+    animation: yuklenme 2s both alternate;
+}
+
+
 .containerResim p {
     position: absolute; 
     bottom: 8px;
@@ -147,6 +165,7 @@ label{
     width: 100%;
     object-fit: contain;
     background-color: rgba(100, 100, 100, 0.500);
+    animation: logo 2s linear alternate;
 }
 #imgKoltuk{
     object-fit:cover;
@@ -158,6 +177,9 @@ label{
     text-align: center;
     
     
+}
+#imgOk{
+    display: none;
 }
 
 
@@ -181,5 +203,47 @@ label{
     .containerForm form>div{
         flex-wrap: wrap;
     }
-    
+    #imgOk{
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 80px;
+        bottom: 50px;
+        left: 50%;
+        
+        animation: ok 2s both infinite;
+    }
+    @keyframes ok {
+        0%{transform: translate(-50%) translate(0px, 0px) rotate(90deg);}
+        50%{transform: translate(-50%) translate(0px, 15px) rotate(90deg);}
+        100%{transform: translate(-50%) translate(0px, 0px) rotate(90deg);}
+    }
+
+    @keyframes logo {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+        
+    }
+}
+
+@media (min-width:801px) {
+    @keyframes yuklenme{
+        0%{
+            opacity: 0;
+            transform: translate(-14px,14px);
+        }
+    }
+
+    @keyframes yuklemefont {
+        0%{
+            opacity: 0;
+            transform: translate(14px, 14px);
+        }
+    }
+    @keyframes input {
+        0%{opacity: 0;}
+        30%{opacity: 0.5;}
+        60%{opacity: 0;}
+        100%{opacity: 1;}
+    }
 }
