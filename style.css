@@ -100,7 +100,7 @@ input{
     border: 0;
     border-bottom: 1px dotted black;
 
-    animation: input 5s linear alternate;
+    
 
 }
 
@@ -113,7 +113,7 @@ label{
     display: inline-block;
     margin: 8px;
     height: 24px;
-    animation: input 5s linear alternate;
+    
 }
 .labelSag{
     width: 120px;
@@ -168,7 +168,7 @@ label{
 #imgKoltuk{
     object-fit:cover;
     height: 100vh;
-
+    width: 40vw;
 }
 
 .pGirisyap{
@@ -238,10 +238,5 @@ label{
             transform: translate(14px, 14px);
         }
     }
-    @keyframes input {
-        0%{opacity: 0;}
-        30%{opacity: 0.5;}
-        60%{opacity: 0;}
-        100%{opacity: 1;}
-    }
+  
 }
