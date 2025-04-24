@@ -64,7 +64,7 @@ a:hover{
     flex-direction:column;
     padding: 20px 0px ;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: "unna",sans-serif;
 }
 
 .containerForm>div{
@@ -130,7 +130,7 @@ label{
     border: 1px dashed black;
     border-radius: 15px;
     background-color: initial;
-    font-family: "Arial Black", sans-serif;
+    font-family:  sans-serif;
     
 }
 .btnKayitOl:hover{
